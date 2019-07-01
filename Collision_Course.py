@@ -1,3 +1,9 @@
+speed_count = int(input().strip())
+speed = []
+for _ in range(speed_count):
+    speed_item = int(input().strip())
+    speed.append(speed_item)
+pos = int(input().strip())
 s=list(range(0,speed_count))
 m=list(map(sum,zip(speed,s)))
 l=m[:pos]
